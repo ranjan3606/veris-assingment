@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+/* .main {
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+   padding: 40px;
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App, body, html, .root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container.mobile {
+  padding: 20px;
+  margin-bottom: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container.desktop {
+  padding: 40px 40px 20px 40px;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  border: 1px solid rgb(210, 210, 210);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; 
+  box-sizing: border-box;
+}
+.sidebar{
+  border-right: 1px solid;
+  min-width: 300px;
+}
+.scheduler-name {
+  font-size: 18px;
+  font-weight: 700
+}
+.scheduler-time {
+  font-size: 32px;
+  font-weight: 900;
+}
+.schedulers {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: flex-start; */
+}
+.schedulers .icon {
+  margin-right: 5px;
+  margin-top: 5px;
+
+}
+.schedulers span {
+  padding: 5px;
+  font-weight: 700;
+  font-size: 17px;
+}
+.scheduler-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.scheduler-form > input {
+  height: 50px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+.scheduler-form > textarea {
+  margin-top: 5px;
+}
+.schedule-details {
+  max-width: 500px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alert {
+  overflow-wrap: break-word;
 }
