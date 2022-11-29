@@ -1,5 +1,5 @@
 import './App.css';
-import { Col, Row, Card, Divider } from 'antd';
+import { Col, Row, Divider } from 'antd';
 import Sidebar from './component/Sidebar';
 import ScheduleForm from './component/ScheduleForm';
 import React, { useEffect, useState } from 'react';
